@@ -1,0 +1,352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+	
+		<title>Distributed Robot Computing</title>
+		
+	
+		
+		<link type="text/css" rel="stylesheet" href="style.css" title="Simple">
+	    <meta name="description" content="Program">
+		<meta name="keywords" content="distributed computing, mobile robots">
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	    <style type="text/css">
+			
+			.Stile1 {color: #666666}
+            .style1 {color: #FF0000}
+            .Stile2 {color: #666666;font-weight: bold}
+			
+        </style>
+	</head><body>
+
+
+
+
+<div id="wrapper">
+
+	<div id="header" align="center">
+		<div id="title"><h1>Research Meeting and School  on  Distributed Computing by Mobile Robots</h1></div>
+	</div>
+<!-- end #header -->
+<div id="logo">
+<table>
+  <tbody>
+    <tr align="center">
+      <td valign="center" width="303" align="left"> <img src="foto2miracoli.jpg" height="125"> </td>
+      <td valign="center" width="216" align="left"> <img src="foto1lungarno.jpg" height="125"></td>
+      <td valign="center" width="180" align="center"> <img src="MacLogo.png" height="125"></td>
+      <td valign="center" width="202" align="center">
+      <h2>
+      <p class="Stile1">Moving and Computing</p>
+      </h2>
+      <p class="Stile1">19-22 September, 2022<br>
+      <a href="https://www.turismo.pisa.it/" target="_blank">Pisa</a>, Italia</p>
+      </td>
+      <td valign="center" width="224" align="right"> <img src="luminosi.jpg" height="125"></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+	<div id="page">
+		<div id="content">	
+	        <div class="post">
+				<h2 class="title">Invited Scheduled Talks</h2>
+				<div class="entry">
+				   <!--  <p> <a href="PROGRAM.pdf">Preliminary Program</a>   (pdf) </p> -->
+				   
+
+<!-- INIZIO PROGRAMMA -->
+
+<p> <span class="style1">
+Quentin Bramas</span><br>
+    <span class="Stile2">
+Solving the rendezvous problem with persistent unit-distance</span></p>
+                    
+                    <p class="body">The rendezvous problem is fundamental for autonomous mobile robots. It is one of the first impossibility result proved by Suzuki and Yamashita. In this presentation we will see how to solve it in the semi-synchronous model using very weak additional hypothesis: when the robots agree on a single axis, or when the robots disagree on their unit-distance. For the latter, we use a new technique based on the persistence of the robots' unit-distances. This technique is also used to solve the rendez-vous in FSYNC in presence of a crashed robot (this problem is not solvable in SSYNC), and can be generalized to solve the gathering in presence of a crashed robot.</p>
+                    
+Keywords: mobile robots, rendezvous, fault-tolerant
+                    
+<p> <span class="style1">
+Jean-Lou De Carufel</span><br>
+    <span class="Stile2">
+Pursuit-Evasion in Graphs: Zombies, Lazy Zombies and a Survivor</span></p>
+
+<p class="body">We study zombies and survivor, a variant of the game of cops and robber on graphs. In this variant, the single survivor plays the role of the robber and attempts to escape from the zombies that play the role of the cops. The zombies are restricted, on their turn, to always follow an edge of a shortest path towards the survivor.<br>
+    Let $z(G)$ be the smallest number of zombies required to catch the survivor on a graph $G$ with $n$ vertices. We show that there exist outerplanar graphs and visibility graphs of simple polygons such that $z(G) = \Theta(n)$. We also show that there exist maximum-degree-$3$ outerplanar graphs such that $z(G) = \Omega(n/\log(n))$.<br>
+    Let $z_L (G)$ be the smallest number of lazy zombies (zombies that can stay still on their turn) required to catch the survivor on a graph $G$. We show that lazy zombies are more powerful than normal zombies but less powerful than cops. We prove that $z_L(G) \leq 2$ for connected outerplanar graphs and this bound is tight in the worst case. We show that $z_L(G) \leq k$ for connected graphs with treedepth $k$. This result implies that $z_L(G)$ is at most $(k+1)\log(n)$ for connected graphs with treewidth k, $O(n)$ for connected planar graphs, $O(gn)$ for connected graphs with genus $g$ and $O(h\sqrt{h}n) for connected graphs with any excluded $h$-vertex minor. Our results on lazy zombies still hold when an adversary chooses the initial positions of the zombies.</p>
+    Keywords: Pursuit-evasion games, Outerplanar Graphs, Treedepth, Treewidth               
+                    
+<p> <span class="style1">Xavier Defago</span><br>
+    <span class="Stile2">Verification and Synthesis of Rendezvous Algorithms for Luminous Robots</span></p>
+
+<p class="body">
+The rendezvous of robots with lights has been a subject of active studies for a few years, with many algorithms testing the limits of existing models. Although very simple, rendezvous algorithms turn out to be surprisingly difficult to verify manually. Therefore, we have developed a framework to verify such algorithms automatically by using model checking.<br>
+    
+This talk focuses on the synthesis of rendezvous algorithms which consists in, given a model (light model, number of colors, scheduler, ...), to output all algorithms that will solve rendezvous in that model. The method relies on the framework for model-checking presented in earlier work, combined with filtering criteria to deal with the combinatorial explosion.</p>
+
+Keywords: model checking, verification, synthesis, luminous robots, rendezvous
+
+                    
+<p> <span class="style1">
+Stephane Devismes</span><br>
+    <span class="Stile2">
+Exploring an Infinite Grid using Disoriented Robots</span></p>
+
+                    <p class="body">In this talk, we address the problem of solving an infinite task using a few very weak computing mobile entities, so-called robot. More precisely, we consider the exploration of an infinite grid using a tiny swarm of such very weak luminous robots (no compass, no chirality,...) assuming synchronous settings.<br>
+                    Those robots are mobile and can perceive their surrounding within a fixed visibility range. Moreover, each of them is endowed with a light that can take different colors; the light color can be also perceived by robots in the surrounding. In this context, we look for optimal solutions w.r.t. the number of robots, the visibility range, and the number used colors.</p>
+
+Keywords: Luminous Robots, Oblivious Robots, Synchronous Look-Compute-Move, Grid, Infinite Exploration 
+   
+<p> <span class="style1">
+Giuseppe A. Di Luna</span><br>
+    <span class="Stile2">
+Black hole Search in Dynamic Rings</span></p>
+
+                    <p class="body">TBA</p>
+                    
+                    
+<p> <span class="style1">
+Konstantinos Georgiou</span><br>
+    <span class="Stile2">
+Evacuation from a Disk for Robots with Asymmetric Communication</span></p>
+
+
+<p class="body">We consider evacuation of two robots from an Exit placed at an unknown location on the perimeter of a unit disk. The robots can move with max speed 1 and start at the center of the disk at the same time.  We consider a new communication model in which the robots have communication faults as follows: one of the robots is a Sender and can only send messages at any distance, while the other is a Receiver in that it can only receive messages from any distance. <br>
+
+    We study the evacuation time, namely the time it takes until the last robot finds the Exit, and show that the evacuation time in the new model is strictly between the evacuation times that can be achieved when both robots and none of the robots can send and receive distant messages. Further, we give an evacuation algorithm in which two cooperating robots accomplish the task in worst-case time at most $\pi+2$. An interesting feature of the proposed algorithm is also the asymmetry inherent in the resulting trajectories.</p>                   
+
+                    
+<p> <span class="style1">            
+David Ilcinkas</span><br>
+<span class="Stile2">Certifying in Coq results on mobile agents: a user perspective</span></p>
+                    <p class="body">Results in distributed computing by mobile entities tend to become more and more complex, relying on tedious case-by-case analyses and/or subtle arguments. On the other hand, model checking tools and proof assistants gain maturity, and there now exist frameworks which are specialized for distributed computing by mobile entities. In this talk, I will present my personal experience with the Pactole framework of the Coq proof assistant, that S&eacute;bastien Bouchard and I used to prove a result on graph exploration by mobile robots.</p>
+
+                    Keywords: formal certification, proof assistant, mobile Robots, graph exploration
+
+                    
+<p> <span class="style1">Anissa Lamani</span><br>
+    <span class="Stile2">
+Asynchronous Gathering in a Torus</span></p>
+                    
+<p class="body"> 
+We consider the gathering problem for asynchronous and oblivious robots that cannot communicate explicitly with each other but are endowed with visibility sensors that allow them to see the positions of the other robots.<br>
+    Most investigations on the gathering problem on the discrete universe are done on ring shaped networks due to the number of symmetric configurations. We extend the study of the gathering problem on torus shaped networks assuming robots endowed with local weak multiplicity detection. That is, robots cannot make the difference between nodes occupied by only one robot from those occupied by more than one robot unless it is their current node. </p>
+ 
+Keywords: Autonomous distributed systems, Robots gathering, Torus, Local Weak Multiplicity Detection
+
+ <p> <span class="style1">
+Flaminia Luccio</span><br>
+    <span class="Stile2">
+Graph Exploration with Deadlines</span></p>
+
+                    <p class="body">An agent, initially located at a random position of a weighted
+graph, has to explore it following some constraints. Each edge of the
+graph has been assigned a positive real number representing the time
+needed to cross that edge, and each node has been assigned a positive
+real number which represents a deadline, i.e., the maximum time at which
+the agent is allowed to visit the node.<br>
+                        We want to answer to the following
+questions: Is there a schedule of visits so that each node is visited at a
+time smaller or equal to its deadline? Is there a schedule of visits that
+maximizes the number of nodes for which the time constraints are met?
+While we have been able to answer to this questions in some specific
+topologies, proving feasibility or NP-hardness results, there are still open
+questions in very dense graphs (joint work with Shantanu Das, Nikos Giachoudis, Flaminia L. Luccio, and Euripides
+Markou).</p>                   
+                    
+<p> <span class="style1">
+Toshimitsu Masuzawa</span><br>
+    <span class="Stile2">Gathering Despite Defected View</span></p>
+
+                    <p class="body">We provide a new perspective on the observation by robots; a robot cannot necessarily observe all other robots regardless of distances to them. We call this new computational model the defected view model. Under this model, we consider the gathering problem and present possible/impossible results.</p>
+                    
+Keywords: mobile robot, gathering, defected view model
+               
+<p> <span class="style1">Ryuichi Matsuoka</span><br>              
+<span class="Stile2">
+On Algorithmic Self-Assembly of Squares by Co-transcriptional Folding</span></p>
+
+<p class="body">
+Algorithms play a primary role in programming an orchestrated molecular
+self-assembly system.
+Co-transcriptional folding is a driving principle of molecular
+self-assembly in which an RNA sequence (transcript) folds upon itself
+into a structure while being synthesized (transcribed) from its DNA
+template.
+Geary, Rothemund, and Andersen have hard-coded a rectangular tile
+structure into an RNA sequence, or more precisely into its DNA template,
+in such a way that the RNA sequence folds into the encoded tile
+structure co-transcriptionally.
+Once a target rectangular shape is resized, a transcript has to be
+designed from scratch.
+If we can design one transcript which is capable of folding into
+multiple shapes, the experiment costs can be reduced.
+In this talk, we present an algorithmic architecture of such a
+transcript for rectangles and squares using its abstract computational
+model called oritatami.</p>
+
+Keywords: Algorithmic molecular self-assembly, Co-transcriptional folding, Oritatami system, Self-assembly of rectangles and squares 
+                    
+<p> <span class="style1">
+Alfredo Navarra</span><br>
+    <span class="Stile2">
+Moblot - Molecular Oblivious Robots</span></p>
+
+<p class="body">
+Theoretical approaches for swarm robotics mainly consider robot systems in the abstract, where the complexity of the underlying model as well as the robots’ capabilities are often reduced to their minimum. One general and well-investigated model is Oblot, where the robots are silent, anonymous, and oblivious.<br>
+In this talk, Moblot is introduced. This is a model that extends Oblot to address a larger spectrum of cases. Moblot stands for Molecular Oblivious robots: like atoms combine themselves to form molecules, in Moblot simple robots can move to form more complex computational units, having an extent and different capabilities with respect to robots; like molecules combine themselves to form the matter, in Moblot the complex structures can exploit their own capabilities to arrange themselves to form any shape defining an acceptable final structure.<br>
+In Moblot, the Matter Formation (MF) problem is defined, that requires suitable arrangements of specific molecules. As a general result, a necessary condition for the solvability MF is provided when robots can freely move on the Euclidean plane, or they are constrained on a square grid. Actually, It can be shown how dealing with molecules can resolve in some cases the symmetry breaking issue where Oblot cannot.<br>
+    Finally, recent distributed algorithms designed for the resolution of basic MF problems are presented.</p>
+
+Keywords: Swarm and Modular Robotics, Self-Organizing Systems, Oblivious Robots, Pattern Formation
+                    
+
+                    
+<p> <span class="style1">       
+Nicolas Nisse</span><br>
+    <span class="Stile2">
+Minimum lethal sets in grids and tori under 3-neighbour bootstrap percolation</span></p>
+                    
+<p class="body">Let $r \geq 1$ be any non negative integer and let $G=(V,E)$~be any undirected graph in which a subset $D \subseteq V$ of vertices are initially {\it  infected}. We consider the process in which, at every step, each non-infected vertex with at least $r$ infected neighbours becomes infected and an infected vertex never becomes non-infected. The problem consists in determining the minimum size $s_{r}(G)$ of an initially infected vertices set $D$ that eventually infects the whole graph $G$.<br>
+    This problem is closely related to cellular automata, to  percolation problems and to the Game of Life studied by John Conway. Note that $s_1(G)=1$ for any connected graph $G$. The case when $G$ is the $n\times n$ grid, $G_{n\times n}$, and $r=2$ is well known and appears in many puzzle books, in particular due to the elegant proof that shows that $s_2(G_{n \times n})=n$ for all $n\in \mathbb{N}$. We study the cases of square grids, $G_{n\times n}$, and tori, $T_{n\times n}$, when $r \in \{3,4\}$. We show that $s_3(G_{n \times n})=\lceil \frac{n^2+2n+4}{3} \rceil$ for every $n$ even and that $\lceil \frac{n^2+2n}{3} \rceil \leq s_3(G_{n \times n})~\leq~\lceil \frac{n^2+2n}{3} \rceil+1$ for any $n$ odd. When $n$ is odd, we show that both bounds are reached, namely $s_3(G_{n \times n})=\lceil \frac{n^2+2n}{3} \rceil$ if $n \equiv 5 \pmod 6$ or $n=2^p-1$ for any $p \in \mathbb{N}^*$, and $s_3(G_{n \times n}) = \lceil \frac{n^2+2n}{3} \rceil+1$ if $n \in \{9,13\}$.<br>
+Finally, for all $n\in \mathbb{N}$, we give the exact expression of $s_3(T_{n \times n})$ (joint work with Fabricio Benevides, Jean-Claude Bermond and Hicham Lesfari).</p>
+                    
+<p> <span class="style1">
+Christian Scheideler</span><br>
+    <span class="Stile2">
+Towards Rapidly Transforming Programmable Matter</span></p>
+
+<p class="body">
+    The Amoebot model has been proposed as a model for programmable matter. However, its transformation capabilities are too slow to be useful in practice. Therefore, I propose two extensions --- a reconfigurable circuit extension (for the emulation of a nervous system) and a joint movement model (for the emulation of a muscular system) --- and present some first results showing how these can be used effectively to achieve rapid shape transformation and movements.</p>
+
+Keywords: programmable matter, Amoebot model 
+
+<p> <span class="style1">Shinnosuke Seki</span><br>
+<span class="Stile2">Single-stranded architectures for RNA co-transcriptional computing</span></p>
+
+<p class="body">An RNA sequence folds upon itself while being synthesized
+(transcribed) from its DNA template sequence nucleotide by nucleotide
+according to the mapping A to U, C to G, G to C, and T to A. This
+phenomenon is called RNA co-transcriptional folding. An RNA sequence can
+fold co-transcriptionally in different ways depending on what are
+around, and thus drives computations in vivo. Using its “oritatami”
+model, co-transcriptional folding has proven capable of various
+computations such as counting in binary, self-assembling a shape
+efficiently, approximating a fractal, and simulating intrinsically
+Turing-universal computational models including the cellular automaton,
+cyclic tag system, and a novel variant of CA called Turedo. This talk
+provides a tutorial on computations by co-transcriptional folding in
+vivo and vitro (RNA) as well as in silico (oritatami), with particular
+emphasis on modular programming in oritatami and molecular counterparts
+of some oritatami modules found in viral RNAs.</p>
+
+Keywords: Molecular self-assembly, RNA co-transcriptional folding, Oritatami model, Modular programming
+                    
+<p> <span class="style1">
+Gokarna Sharma</span><br>
+    <span class="Stile2">
+Optimally Solving Some Formation Problems on a Grid by Asynchronous Autonomous Robots</span></p>
+
+<p class="body">We consider the distributed setting of n autonomous mobile robots that operate in asynchronous Look-Compute-Move cycles following the robots with lights model. We assume obstructed visibility where a robot cannot see another robot if a third robot is positioned on the straight line connecting them. In addition, we consider a grid-based terrain that restricts each robot's movement to one of the four neighboring grid points from its current grid position.<br>
+    In this talk, we will discuss distributed algorithms for three fundamental formation problems, namely, Complete Visibility, Convex Hull, and Arbitrary Pattern Formation, for robots starting initially at arbitrary but distinct positions. The Complete Visibility problem is to relocate the robots so that each robot sees all n-1 others.<br>
+    The Convex Hull Formation problem is to relocate the robots so that each robot is positioned on a vertex of a convex hull. The Arbitrary Pattern Formation problem is to relocate the robots to form an arbitrary target pattern given as input. The performance of the designed algorithms is measured with respect to (i) time to solve the problem, (ii) perimeter/area of the solution configuration, and (iii) number of moves by robots. We will particularly argue that our algorithms are asymptotically optimal on all these performance metrics, using only a constant number of colors for the lights.</p>
+
+Keywords: Distributed algorithms, Autonomous robots, Robots with lights, Obstructed visibility, Grid, Complete visibility, Convex hull, Pattern, Time, Area, Perimeter, Moves, Colors
+                    
+             
+ <p> <span class="style1">
+Giovanni Viglietta</span><br>
+    <span class="Stile2">
+Optimal Computation in Anonymous Dynamic Networks</span></p>
+
+                    <p class="body">We discuss optimal deterministic computation in anonymous dynamic networks. By leveraging a recently introduced combinatorial structure called "history tree", we give linear-time algorithms for general computation in such networks in the presence of one or more leaders, as well as leader election algorithms, leaderless average consensus, etc. We also give matching or almost-matching lower bounds on such problems.</p> 
+
+Keywords: anonymous dynamic network, history tree, optimal linear time, counting                   
+
+<p> <span class="style1">Koichi Wada</span><br>
+    <span class="Stile2">
+Energy-constrained mobile robots and their computational power</span></p>
+
+<p class="body">
+We consider distributed systems of identical autonomous computational entities, called
+ robots, moving and operating in the plane in synchronous Look-Compute-Move (LCM) cycles.
+Usually, their models always assume that the robots have unlimited amounts of energy.<br>
+In this talk,  we remove this assumption and study the computational capabilities of robots whose energy is limited, albeit renewable.
+ More precisely, we consider systems where an activated entity uses all its energy
+ to execute an  LCM  cycle, and the energy can be restored through a period of inactivity.
+    We consider the computational power of energy-constrained mobile robots and compare it with energy-unconstrained mobile robots.</p>
+ 
+Keywords: oblivious robots, luminous robots, energy-constrained robots, comparison of models.
+                    
+
+
+
+<p class="Stile1"><strong>Note:</strong> Other talks will be scheduled directly on site</p>
+
+
+    
+<!-- FINE PROGRAMMA -->
+
+			  </div>
+          </div>
+          
+           <!-- <div class="post">
+	        	<a name="contacts"></a>
+				<h2 class="title">Resources</h2>
+				<div class="entry">
+	               <p> <a href="http://sbrinz.di.unipi.it/MAC2010/MAC2010Material.html">Slides and Background Material</a>   </p>
+	            </div>
+			</div> -->
+          	            
+	
+          
+   <!--        <div class="post">
+	        	<a name="contacts"></a>
+				<h2 class="title">Poster</h2>
+				<div class="entry">
+	               <p> <a href="POSTER.pdf">Download  poster</a>   (pdf) </p>
+	               TBA.
+
+	            </div>
+			</div>
+          	     -->       
+		</div>
+
+          
+          
+          
+<!-- end #content -->
+<div id="sidebar">
+<h2> Information </h2>
+<ul id="links">
+  <li><a href="MAC2022.html">Home</a></li>
+  <li><a href="MAC-committee.html">Committees</a></li>
+  <li><a href="MAC-participants.html"> Participants</a></li>
+  <li><a href="MAC-registration.html">Registration</a></li>
+  <li><a href="MAC-program.html">Program</a></li>
+  <li><a href="MAC-talks.html">Invited Scheduled Talks</a></li>
+  <li><a href="MAC-venue.html">Venue</a></li>
+  <li><a href="">Pictures</a></li>
+  <!-- <li><a href="MAC-travel.html">Events and Attraction</a></li>-->
+  <li><a href="http://sbrinz.di.unipi.it/peppe/MovingAndComputing/MAC-history.html" target="_blank">MAC History</a></li>
+  <li><a href="https://link.springer.com/book/10.1007/978-3-030-11072-7" target="_blank">MAC Book</a></li>
+</ul>
+<!-- 
+<br>
+<h2> Sponsors </h2>
+<ul>
+  <center> <a href="http://www.unipi.it" target="_blank"> <img src="univPisaLogo.gif" height="85"/> </a> </center>
+</ul>
+ -->
+</div>
+<!-- end #sidebar -->
+<div class="post" style="margin: 0pt; clear: both;"><span class="post"
+ style="margin: 0pt; clear: both;"></span></div>
+</div>
+<!-- end #page -->
+</div>
+<div id="footer"> </div>
+<!-- end #footer -->
+</body>
+</html>
